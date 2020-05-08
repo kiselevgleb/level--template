@@ -1,7 +1,19 @@
-import sum from '../basic';
+import Bowerman from '../Bowerman';
+import Daemon from '../Daemon';
+import Magician from '../Magician';
+import Swordsman from '../Swordsman';
+import Undead from '../Undead';
+import Zombie from '../Zombie';
 
-test('should sum', () => {
-  const result = sum([1, 2, 3]);
+// import Character from '../Character';
 
-  expect(result).toBe(6);
+
+
+const resultBower = new Bowerman();
+test('should grow', () => {
+  resultBower.levelUp();
+  expect(resultBower.attack).toBe(30);
+  expect(resultBower.defence).toBe(30);
+  expect(resultBower.health).toBe(100);
+  expect(resultBower.level).toBe(6);
 });
