@@ -1,9 +1,9 @@
 // TODO: write your code here
 export default class Character {
-    constructor(){
+    constructor(attack,defence){
         this.health=80;
-        this.attack=25;
-        this.defence=25;
+        this.attack=attack;
+        this.defence=defence;
         this.level=5;
         
     }
